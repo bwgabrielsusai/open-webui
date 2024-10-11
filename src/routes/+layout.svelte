@@ -177,7 +177,7 @@
 
 			const audio = new Audio(`/audio/greeting.mp3`);
 			const playAudio = () => {
-				audio.play();
+				// audio.play();
 				document.removeEventListener('click', playAudio);
 			};
 
