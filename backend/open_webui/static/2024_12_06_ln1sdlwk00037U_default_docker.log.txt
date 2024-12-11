@@ -1,0 +1,614 @@
+2024-12-06T14:13:41.3949736Z Loading WEBUI_SECRET_KEY from file, not provided as an environment variable.
+2024-12-06T14:13:41.3970562Z Generating WEBUI_SECRET_KEY
+2024-12-06T14:13:41.3977876Z Loading WEBUI_SECRET_KEY from .webui_secret_key
+2024-12-06T14:13:44.9581223Z /app/backend/open_webui
+2024-12-06T14:13:44.9582550Z /app/backend
+2024-12-06T14:13:44.9582634Z /app
+2024-12-06T14:13:44.9582798Z Running migrations
+2024-12-06T14:13:44.9812495Z INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+2024-12-06T14:13:44.9813666Z INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+2024-12-06T14:13:45.1785010Z INFO  [open_webui.env] 'JWT_EXPIRES_IN' loaded from the latest database entry
+2024-12-06T14:13:45.1954137Z INFO  [open_webui.env] 'ENABLE_OLLAMA_API' loaded from the latest database entry
+2024-12-06T14:13:45.1964478Z INFO  [open_webui.env] 'OLLAMA_BASE_URLS' loaded from the latest database entry
+2024-12-06T14:13:45.1965372Z INFO  [open_webui.env] 'OPENAI_API_KEYS' loaded from the latest database entry
+2024-12-06T14:13:45.1965488Z INFO  [open_webui.env] 'OPENAI_API_BASE_URLS' loaded from the latest database entry
+2024-12-06T14:13:45.1965562Z INFO  [open_webui.env] 'ENABLE_SIGNUP' loaded from the latest database entry
+2024-12-06T14:13:45.1965680Z INFO  [open_webui.env] 'DEFAULT_LOCALE' loaded from the latest database entry
+2024-12-06T14:13:45.1965744Z INFO  [open_webui.env] 'DEFAULT_MODELS' loaded from the latest database entry
+2024-12-06T14:13:45.1965810Z INFO  [open_webui.env] 'DEFAULT_PROMPT_SUGGESTIONS' loaded from the latest database entry
+2024-12-06T14:13:45.1965937Z INFO  [open_webui.env] 'DEFAULT_USER_ROLE' loaded from the latest database entry
+2024-12-06T14:13:45.1966010Z INFO  [open_webui.env] 'USER_PERMISSIONS' loaded from the latest database entry
+2024-12-06T14:13:45.1966098Z INFO  [open_webui.env] 'ENABLE_MODEL_FILTER' loaded from the latest database entry
+2024-12-06T14:13:45.1966176Z INFO  [open_webui.env] 'MODEL_FILTER_LIST' loaded from the latest database entry
+2024-12-06T14:13:45.1966243Z INFO  [open_webui.env] 'WEBHOOK_URL' loaded from the latest database entry
+2024-12-06T14:13:45.1966310Z INFO  [open_webui.env] 'ENABLE_COMMUNITY_SHARING' loaded from the latest database entry
+2024-12-06T14:13:45.1966408Z INFO  [open_webui.env] 'ENABLE_MESSAGE_RATING' loaded from the latest database entry
+2024-12-06T14:13:45.2011214Z INFO  [open_webui.env] 'SHOW_ADMIN_DETAILS' loaded from the latest database entry
+2024-12-06T14:13:45.2012036Z INFO  [open_webui.env] 'PDF_EXTRACT_IMAGES' loaded from the latest database entry
+2024-12-06T14:13:45.2012202Z INFO  [open_webui.env] Embedding model set: sentence-transformers/all-MiniLM-L6-v2
+2024-12-06T14:13:45.2012278Z INFO  [open_webui.env] 'YOUTUBE_LOADER_LANGUAGE' loaded from the latest database entry
+2024-12-06T14:13:45.2012344Z INFO  [open_webui.env] 'ENABLE_RAG_WEB_SEARCH' loaded from the latest database entry
+2024-12-06T14:13:45.2012416Z INFO  [open_webui.env] 'RAG_WEB_SEARCH_ENGINE' loaded from the latest database entry
+2024-12-06T14:13:45.2012512Z INFO  [open_webui.env] 'SEARXNG_QUERY_URL' loaded from the latest database entry
+2024-12-06T14:13:45.2012586Z INFO  [open_webui.env] 'GOOGLE_PSE_API_KEY' loaded from the latest database entry
+2024-12-06T14:13:45.2012684Z INFO  [open_webui.env] 'GOOGLE_PSE_ENGINE_ID' loaded from the latest database entry
+2024-12-06T14:13:45.2012752Z INFO  [open_webui.env] 'BRAVE_SEARCH_API_KEY' loaded from the latest database entry
+2024-12-06T14:13:45.2012812Z INFO  [open_webui.env] 'SERPSTACK_API_KEY' loaded from the latest database entry
+2024-12-06T14:13:45.2012889Z INFO  [open_webui.env] 'SERPSTACK_HTTPS' loaded from the latest database entry
+2024-12-06T14:13:45.2012948Z INFO  [open_webui.env] 'SERPER_API_KEY' loaded from the latest database entry
+2024-12-06T14:13:45.2013013Z INFO  [open_webui.env] 'SERPLY_API_KEY' loaded from the latest database entry
+2024-12-06T14:13:45.2013070Z INFO  [open_webui.env] 'TAVILY_API_KEY' loaded from the latest database entry
+2024-12-06T14:13:45.2013131Z INFO  [open_webui.env] 'SEARCHAPI_API_KEY' loaded from the latest database entry
+2024-12-06T14:13:45.2013212Z INFO  [open_webui.env] 'RAG_WEB_SEARCH_RESULT_COUNT' loaded from the latest database entry
+2024-12-06T14:13:45.2013284Z INFO  [open_webui.env] 'RAG_WEB_SEARCH_CONCURRENT_REQUESTS' loaded from the latest database entry
+2024-12-06T14:13:45.7779409Z WARNI [chromadb.db.impl.sqlite] ⚠️ It looks like you upgraded from a version below 0.6 and could benefit from vacuuming your database. Run chromadb utils vacuum --help for more information.
+2024-12-06T14:13:46.4027083Z WARNI [langchain_community.utils.user_agent] USER_AGENT environment variable not set, consider setting it to identify your requests.
+2024-12-06T14:13:55.5910096Z INFO  [open_webui.apps.audio.main] whisper_device_type: cpu
+2024-12-06T14:13:55.8852053Z INFO:     Started server process [1]
+2024-12-06T14:13:55.8861424Z INFO:     Waiting for application startup.
+2024-12-06T14:13:55.8873822Z INFO:     Application startup complete.
+2024-12-06T14:13:55.8890502Z INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2024-12-06T14:13:56.9850270Z INFO  [open_webui.apps.openai.main] get_all_models()
+2024-12-06T14:13:57.1398702Z 
+2024-12-06T14:13:57.1399600Z   ___                    __        __   _     _   _ ___ 
+2024-12-06T14:13:57.1399694Z  / _ \ _ __   ___ _ __   \ \      / /__| |__ | | | |_ _|
+2024-12-06T14:13:57.1399746Z | | | | '_ \ / _ \ '_ \   \ \ /\ / / _ \ '_ \| | | || | 
+2024-12-06T14:13:57.1399794Z | |_| | |_) |  __/ | | |   \ V  V /  __/ |_) | |_| || | 
+2024-12-06T14:13:57.1399847Z  \___/| .__/ \___|_| |_|    \_/\_/ \___|_.__/ \___/|___|
+2024-12-06T14:13:57.1399905Z       |_|                                               
+2024-12-06T14:13:57.1399986Z 
+2024-12-06T14:13:57.1400037Z       
+2024-12-06T14:13:57.1400102Z v0.3.32 - building the best open-source AI user interface.
+2024-12-06T14:13:57.1400149Z 
+2024-12-06T14:13:57.1400211Z https://github.com/open-webui/open-webui
+2024-12-06T14:13:57.1400259Z 
+2024-12-06T14:13:57.1400437Z INFO:     169.254.129.1:60885 - "GET /robots933456.txt HTTP/1.1" 200 OK
+2024-12-06T14:13:57.3609284Z INFO:     169.254.129.1:60893 - "GET / HTTP/1.1" 200 OK
+2024-12-06T14:13:57.4379864Z INFO:     169.254.129.1:60893 - "GET / HTTP/1.1" 200 OK
+2024-12-06T18:15:42.8499946Z Loading WEBUI_SECRET_KEY from file, not provided as an environment variable.
+2024-12-06T18:15:42.8504475Z Generating WEBUI_SECRET_KEY
+2024-12-06T18:15:42.8556909Z Loading WEBUI_SECRET_KEY from .webui_secret_key
+2024-12-06T18:15:48.5249984Z /app/backend/open_webui
+2024-12-06T18:15:48.5251003Z /app/backend
+2024-12-06T18:15:48.5251131Z /app
+2024-12-06T18:15:48.5251206Z Running migrations
+2024-12-06T18:15:48.5565243Z INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+2024-12-06T18:15:48.5566186Z INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+2024-12-06T18:15:48.7535389Z INFO  [open_webui.env] 'JWT_EXPIRES_IN' loaded from the latest database entry
+2024-12-06T18:15:48.7690591Z INFO  [open_webui.env] 'ENABLE_OLLAMA_API' loaded from the latest database entry
+2024-12-06T18:15:48.7701534Z INFO  [open_webui.env] 'OLLAMA_BASE_URLS' loaded from the latest database entry
+2024-12-06T18:15:48.7702066Z INFO  [open_webui.env] 'OPENAI_API_KEYS' loaded from the latest database entry
+2024-12-06T18:15:48.7702196Z INFO  [open_webui.env] 'OPENAI_API_BASE_URLS' loaded from the latest database entry
+2024-12-06T18:15:48.7702267Z INFO  [open_webui.env] 'ENABLE_SIGNUP' loaded from the latest database entry
+2024-12-06T18:15:48.7702329Z INFO  [open_webui.env] 'DEFAULT_LOCALE' loaded from the latest database entry
+2024-12-06T18:15:48.7702388Z INFO  [open_webui.env] 'DEFAULT_MODELS' loaded from the latest database entry
+2024-12-06T18:15:48.7702452Z INFO  [open_webui.env] 'DEFAULT_PROMPT_SUGGESTIONS' loaded from the latest database entry
+2024-12-06T18:15:48.7702600Z INFO  [open_webui.env] 'DEFAULT_USER_ROLE' loaded from the latest database entry
+2024-12-06T18:15:48.7702664Z INFO  [open_webui.env] 'USER_PERMISSIONS' loaded from the latest database entry
+2024-12-06T18:15:48.7702731Z INFO  [open_webui.env] 'ENABLE_MODEL_FILTER' loaded from the latest database entry
+2024-12-06T18:15:48.7702801Z INFO  [open_webui.env] 'MODEL_FILTER_LIST' loaded from the latest database entry
+2024-12-06T18:15:48.7702861Z INFO  [open_webui.env] 'WEBHOOK_URL' loaded from the latest database entry
+2024-12-06T18:15:48.7702948Z INFO  [open_webui.env] 'ENABLE_COMMUNITY_SHARING' loaded from the latest database entry
+2024-12-06T18:15:48.7703032Z INFO  [open_webui.env] 'ENABLE_MESSAGE_RATING' loaded from the latest database entry
+2024-12-06T18:15:48.7717668Z INFO  [open_webui.env] 'SHOW_ADMIN_DETAILS' loaded from the latest database entry
+2024-12-06T18:15:48.7727758Z INFO  [open_webui.env] 'PDF_EXTRACT_IMAGES' loaded from the latest database entry
+2024-12-06T18:15:48.7728097Z INFO  [open_webui.env] Embedding model set: sentence-transformers/all-MiniLM-L6-v2
+2024-12-06T18:15:48.7728213Z INFO  [open_webui.env] 'YOUTUBE_LOADER_LANGUAGE' loaded from the latest database entry
+2024-12-06T18:15:48.7728279Z INFO  [open_webui.env] 'ENABLE_RAG_WEB_SEARCH' loaded from the latest database entry
+2024-12-06T18:15:48.7728339Z INFO  [open_webui.env] 'RAG_WEB_SEARCH_ENGINE' loaded from the latest database entry
+2024-12-06T18:15:48.7728400Z INFO  [open_webui.env] 'SEARXNG_QUERY_URL' loaded from the latest database entry
+2024-12-06T18:15:48.7728463Z INFO  [open_webui.env] 'GOOGLE_PSE_API_KEY' loaded from the latest database entry
+2024-12-06T18:15:48.7728574Z INFO  [open_webui.env] 'GOOGLE_PSE_ENGINE_ID' loaded from the latest database entry
+2024-12-06T18:15:48.7728658Z INFO  [open_webui.env] 'BRAVE_SEARCH_API_KEY' loaded from the latest database entry
+2024-12-06T18:15:48.7729009Z INFO  [open_webui.env] 'SERPSTACK_API_KEY' loaded from the latest database entry
+2024-12-06T18:15:48.7729102Z INFO  [open_webui.env] 'SERPSTACK_HTTPS' loaded from the latest database entry
+2024-12-06T18:15:48.7729197Z INFO  [open_webui.env] 'SERPER_API_KEY' loaded from the latest database entry
+2024-12-06T18:15:48.7729283Z INFO  [open_webui.env] 'SERPLY_API_KEY' loaded from the latest database entry
+2024-12-06T18:15:48.7729368Z INFO  [open_webui.env] 'TAVILY_API_KEY' loaded from the latest database entry
+2024-12-06T18:15:48.7729429Z INFO  [open_webui.env] 'SEARCHAPI_API_KEY' loaded from the latest database entry
+2024-12-06T18:15:48.7729491Z INFO  [open_webui.env] 'RAG_WEB_SEARCH_RESULT_COUNT' loaded from the latest database entry
+2024-12-06T18:15:48.7729559Z INFO  [open_webui.env] 'RAG_WEB_SEARCH_CONCURRENT_REQUESTS' loaded from the latest database entry
+2024-12-06T18:15:49.3554191Z WARNI [chromadb.db.impl.sqlite] ⚠️ It looks like you upgraded from a version below 0.6 and could benefit from vacuuming your database. Run chromadb utils vacuum --help for more information.
+2024-12-06T18:15:49.9943739Z WARNI [langchain_community.utils.user_agent] USER_AGENT environment variable not set, consider setting it to identify your requests.
+2024-12-06T18:16:00.0085768Z INFO  [open_webui.apps.audio.main] whisper_device_type: cpu
+2024-12-06T18:16:00.7450984Z INFO:     Started server process [1]
+2024-12-06T18:16:00.7458786Z INFO:     Waiting for application startup.
+2024-12-06T18:16:00.7464557Z INFO:     Application startup complete.
+2024-12-06T18:16:00.7471681Z INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+2024-12-06T18:16:00.9383996Z INFO  [open_webui.apps.openai.main] get_all_models()
+2024-12-06T18:16:01.1313426Z 
+2024-12-06T18:16:01.1314321Z   ___                    __        __   _     _   _ ___ 
+2024-12-06T18:16:01.1314418Z  / _ \ _ __   ___ _ __   \ \      / /__| |__ | | | |_ _|
+2024-12-06T18:16:01.1314482Z | | | | '_ \ / _ \ '_ \   \ \ /\ / / _ \ '_ \| | | || | 
+2024-12-06T18:16:01.1314534Z | |_| | |_) |  __/ | | |   \ V  V /  __/ |_) | |_| || | 
+2024-12-06T18:16:01.1314648Z  \___/| .__/ \___|_| |_|    \_/\_/ \___|_.__/ \___/|___|
+2024-12-06T18:16:01.1314702Z       |_|                                               
+2024-12-06T18:16:01.1314745Z 
+2024-12-06T18:16:01.1314783Z       
+2024-12-06T18:16:01.1314838Z v0.3.32 - building the best open-source AI user interface.
+2024-12-06T18:16:01.1314870Z 
+2024-12-06T18:16:01.1314934Z https://github.com/open-webui/open-webui
+2024-12-06T18:16:01.1314965Z 
+2024-12-06T18:16:01.1315113Z INFO:     169.254.129.1:42069 - "GET /robots933456.txt HTTP/1.1" 200 OK
+2024-12-06T18:16:01.6785374Z INFO:     169.254.129.1:42075 - "GET / HTTP/1.1" 200 OK
+2024-12-06T18:16:01.7318098Z INFO:     169.254.129.1:42075 - "GET / HTTP/1.1" 200 OK
+2024-12-06T18:23:20.2622877Z INFO:     38.134.35.2:20515:0 - "GET /api/v1/users/user/settings HTTP/1.1" 401 Unauthorized
+2024-12-06T18:23:20.2815449Z INFO:     38.134.35.2:20515:0 - "GET /api/v1/users/user/settings HTTP/1.1" 401 Unauthorized
+2024-12-06T18:23:47.9116753Z INFO:     38.134.35.2:50968:0 - "GET /api/v1/chats/6861dfe2-4791-4f5b-9ecd-f2f6a482c177 HTTP/1.1" 401 Unauthorized
+2024-12-06T18:23:48.0292881Z INFO  [open_webui.apps.ollama.main] get_all_models()
+2024-12-06T18:23:48.0394200Z INFO:     38.134.35.2:50968:0 - "GET /ollama/api/version HTTP/1.1" 200 OK
+2024-12-06T18:23:48.2099217Z INFO:     38.134.35.2:50968:0 - "GET /api/v1/chats/560d195b-ac6f-4a93-a42f-5521a9d36e57 HTTP/1.1" 401 Unauthorized
+2024-12-06T18:23:48.3033365Z INFO  [open_webui.apps.ollama.main] get_all_models()
+2024-12-06T18:23:48.3118529Z INFO:     38.134.35.2:50968:0 - "GET /ollama/api/version HTTP/1.1" 200 OK
+2024-12-06T18:23:49.8425671Z INFO:     38.134.35.2:20515:0 - "POST /api/task/title/completions HTTP/1.1" 401 Unauthorized
+2024-12-06T18:23:49.8695356Z INFO:     38.134.35.2:20515:0 - "POST /api/v1/chats/08e210a0-d76b-49fc-993a-0a814abdea90 HTTP/1.1" 401 Unauthorized
+2024-12-06T18:24:09.6417209Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/scheduler.Dyt_jldW.js HTTP/1.1" 200 OK
+2024-12-06T18:24:09.6519881Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/preload-helper.C1FmrZbK.js HTTP/1.1" 200 OK
+2024-12-06T18:24:09.6617625Z INFO:     38.134.35.2:40651:0 - "GET /static/splash.png HTTP/1.1" 200 OK
+2024-12-06T18:24:09.7902692Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/stores.BZsCowGH.js HTTP/1.1" 200 OK
+2024-12-06T18:24:09.7924364Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/nodes/0.DIvnv7eq.js HTTP/1.1" 200 OK
+2024-12-06T18:24:09.8169330Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/Toaster.svelte_svelte_type_style_lang.Ch2gtda1.js HTTP/1.1" 200 OK
+2024-12-06T18:24:09.8169797Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/spread.CNdYb9hD.js HTTP/1.1" 200 OK
+2024-12-06T18:24:09.8169842Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/_commonjsHelpers.BosuxZz1.js HTTP/1.1" 200 OK
+2024-12-06T18:24:09.8180998Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.Dt7kOikr.js HTTP/1.1" 200 OK
+2024-12-06T18:24:09.8257791Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.DYRpuY7k.js HTTP/1.1" 200 OK
+2024-12-06T18:24:09.8612490Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/nodes/1.DY7IQ3lH.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3127541Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.DMdt0oYD.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3238886Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/FileSaver.min.CimDdHIv.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3440975Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.DUcTcC-O.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3533436Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/AdvancedParams.BSh7Pp0Y.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3822568Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.C8Jf39As.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3832226Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/assets/ConfirmDialog.9RC9XL2T.css HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3839442Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.DPvqBlKq.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3846924Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/assets/Modal.B2SnuaI5.css HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3852228Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.TDZz6uhN.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3932268Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/Spinner.PTjxiW1E.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.3971617Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/dayjs.min.CnqrW7zs.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4163652Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.iJgn5Pc1.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4257337Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/CodeEditor.BTkpIQhx.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4284436Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/assets/Selector.BqlJvw3l.css HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4302902Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/menu-trigger.F67SP9zA.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4693080Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/Help.t93zYgOO.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4702955Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.iLXc35gn.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4709366Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/Loader.CkRmb5Nw.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4717773Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/assets/Help.CpMQnX0I.css HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4725780Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.DUnSgyZR.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4733559Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/fuse.CU2r43ac.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4741585Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/index.D0pzOqRc.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4749099Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/GarbageBin.BLuBf3bx.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.4843341Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/Heart.D5-70PQp.js HTTP/1.1" 200 OK
+2024-12-06T18:24:10.8927907Z INFO:     38.134.35.2:40651:0 - "GET /manifest.json HTTP/1.1" 200 OK
+2024-12-06T18:24:10.8967818Z INFO:     38.134.35.2:40651:0 - "GET /favicon.png HTTP/1.1" 200 OK
+2024-12-06T18:24:10.9100360Z INFO:     38.134.35.2:40651:0 - "GET /static/logo.png HTTP/1.1" 200 OK
+2024-12-06T18:24:11.0025486Z INFO:     38.134.35.2:40651:0 - "GET /api/config HTTP/1.1" 200 OK
+2024-12-06T18:24:11.0360853Z INFO:     38.134.35.2:40651:0 - "GET /api/v1/auths/ HTTP/1.1" 401 Unauthorized
+2024-12-06T18:24:11.0370024Z INFO:     38.134.35.2:40651:0 - "GET /_app/immutable/chunks/translation.BlvPPalC.js HTTP/1.1" 200 OK
+2024-12-06T18:24:11.0717966Z Invalid session mlU4XerfQ-DYCMqPAAKM (further occurrences of this error will be logged with level INFO)
+2024-12-06T18:24:11.0718713Z ERROR [engineio.server] Invalid session mlU4XerfQ-DYCMqPAAKM (further occurrences of this error will be logged with level INFO)
+2024-12-06T18:24:11.0746066Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDpNi&sid=mlU4XerfQ-DYCMqPAAKM HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:11.0991054Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDpO7&sid=mlU4XerfQ-DYCMqPAAKM HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:11.1552596Z INFO:     38.134.35.2:40651:0 - "GET /assets/fonts/Archivo-Variable.ttf HTTP/1.1" 200 OK
+2024-12-06T18:24:11.8030815Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDpZ5 HTTP/1.1" 200 OK
+2024-12-06T18:24:11.8213367Z INFO:     ('38.134.35.2:40651', 0) - "WebSocket /ws/socket.io/?EIO=4&transport=websocket&sid=we--CU_VkeV5PCchAAAA" [accepted]
+2024-12-06T18:24:11.8225445Z INFO:     connection open
+2024-12-06T18:24:11.8289764Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDpZP&sid=we--CU_VkeV5PCchAAAA HTTP/1.1" 200 OK
+2024-12-06T18:24:11.8580997Z INFO:     connection closed
+2024-12-06T18:24:11.8643938Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDpZv&sid=we--CU_VkeV5PCchAAAA HTTP/1.1" 200 OK
+2024-12-06T18:24:13.2711024Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDpvn HTTP/1.1" 200 OK
+2024-12-06T18:24:13.3253035Z INFO:     ('38.134.35.2:40651', 0) - "WebSocket /ws/socket.io/?EIO=4&transport=websocket&sid=fBvNHiHaGtrF1OIfAAAC" [accepted]
+2024-12-06T18:24:13.3261215Z INFO:     connection open
+2024-12-06T18:24:13.3311332Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDpwT&sid=fBvNHiHaGtrF1OIfAAAC HTTP/1.1" 200 OK
+2024-12-06T18:24:13.3799278Z INFO:     connection closed
+2024-12-06T18:24:13.3876700Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDpxJ&sid=fBvNHiHaGtrF1OIfAAAC HTTP/1.1" 200 OK
+2024-12-06T18:24:14.7375522Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDqGw HTTP/1.1" 200 OK
+2024-12-06T18:24:14.7551478Z INFO:     ('38.134.35.2:40651', 0) - "WebSocket /ws/socket.io/?EIO=4&transport=websocket&sid=b3Be-Rz5v_UJk579AAAE" [accepted]
+2024-12-06T18:24:14.7561029Z INFO:     connection open
+2024-12-06T18:24:14.7589117Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDqHG.0&sid=b3Be-Rz5v_UJk579AAAE HTTP/1.1" 200 OK
+2024-12-06T18:24:14.7764649Z INFO:     connection closed
+2024-12-06T18:24:14.7800448Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDqHe&sid=b3Be-Rz5v_UJk579AAAE HTTP/1.1" 200 OK
+2024-12-06T18:24:15.9945043Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDqaa.0&sid=UExmm4tEASZM2bSMAAKO HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:16.0125829Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDqaw&sid=UExmm4tEASZM2bSMAAKO HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:16.9112860Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDqor HTTP/1.1" 200 OK
+2024-12-06T18:24:16.9618149Z INFO:     ('38.134.35.2:40651', 0) - "WebSocket /ws/socket.io/?EIO=4&transport=websocket&sid=egp8-7zQBkqUPu_QAAAF" [accepted]
+2024-12-06T18:24:16.9627747Z INFO:     connection closed
+2024-12-06T18:24:16.9668396Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDqpA&sid=egp8-7zQBkqUPu_QAAAF HTTP/1.1" 200 OK
+2024-12-06T18:24:17.2873728Z INFO:     38.134.35.2:40651:0 - "GET /oauth/microsoft/login HTTP/1.1" 302 Found
+2024-12-06T18:24:17.3494623Z ERROR:    Exception in ASGI application
+2024-12-06T18:24:17.3495394Z   + Exception Group Traceback (most recent call last):
+2024-12-06T18:24:17.3495443Z   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+2024-12-06T18:24:17.3495513Z   |     yield
+2024-12-06T18:24:17.3495541Z   |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 190, in __call__
+2024-12-06T18:24:17.3495566Z   |     async with anyio.create_task_group() as task_group:
+2024-12-06T18:24:17.3495591Z   |   File "/usr/local/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 736, in __aexit__
+2024-12-06T18:24:17.3495612Z   |     raise BaseExceptionGroup(
+2024-12-06T18:24:17.3495696Z   | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+2024-12-06T18:24:17.3495720Z   +-+---------------- 1 ----------------
+2024-12-06T18:24:17.3495740Z     | Traceback (most recent call last):
+2024-12-06T18:24:17.3495765Z     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 401, in run_asgi
+2024-12-06T18:24:17.3495788Z     |     result = await app(  # type: ignore[func-returns-value]
+2024-12-06T18:24:17.3495811Z     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3495836Z     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 70, in __call__
+2024-12-06T18:24:17.3495859Z     |     return await self.app(scope, receive, send)
+2024-12-06T18:24:17.3495880Z     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3495924Z     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2024-12-06T18:24:17.3495947Z     |     await super().__call__(scope, receive, send)
+2024-12-06T18:24:17.3495974Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 123, in __call__
+2024-12-06T18:24:17.3495996Z     |     await self.middleware_stack(scope, receive, send)
+2024-12-06T18:24:17.3496021Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+2024-12-06T18:24:17.3496042Z     |     raise exc
+2024-12-06T18:24:17.3496070Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+2024-12-06T18:24:17.3496095Z     |     await self.app(scope, receive, _send)
+2024-12-06T18:24:17.3496120Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/sessions.py", line 85, in __call__
+2024-12-06T18:24:17.3496158Z     |     await self.app(scope, receive, send_wrapper)
+2024-12-06T18:24:17.3496198Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:17.3496220Z     |     with collapse_excgroups():
+2024-12-06T18:24:17.3496244Z     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:17.3496265Z     |     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:17.3496289Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:17.3496310Z     |     raise exc
+2024-12-06T18:24:17.3496381Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:17.3496428Z     |     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:17.3496451Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3496474Z     |   File "/app/backend/open_webui/main.py", line 884, in inspect_websocket
+2024-12-06T18:24:17.3496502Z     |     return await call_next(request)
+2024-12-06T18:24:17.3496525Z     |            ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3496553Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:17.3496577Z     |     raise app_exc
+2024-12-06T18:24:17.3496609Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:17.3496745Z     |     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:17.3496785Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:17.3496809Z     |     with collapse_excgroups():
+2024-12-06T18:24:17.3496839Z     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:17.3496866Z     |     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:17.3496895Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:17.3496919Z     |     raise exc
+2024-12-06T18:24:17.3496949Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:17.3496975Z     |     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:17.3497022Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3497052Z     |   File "/app/backend/open_webui/main.py", line 863, in update_embedding_function
+2024-12-06T18:24:17.3497080Z     |     response = await call_next(request)
+2024-12-06T18:24:17.3497104Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3497134Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 166, in call_next
+2024-12-06T18:24:17.3497163Z     |     raise RuntimeError("No response returned.")
+2024-12-06T18:24:17.3497191Z     | RuntimeError: No response returned.
+2024-12-06T18:24:17.3497215Z     +------------------------------------
+2024-12-06T18:24:17.3497243Z 
+2024-12-06T18:24:17.3497550Z During handling of the above exception, another exception occurred:
+2024-12-06T18:24:17.3497610Z 
+2024-12-06T18:24:17.3497636Z Traceback (most recent call last):
+2024-12-06T18:24:17.3497668Z   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 401, in run_asgi
+2024-12-06T18:24:17.3497695Z     result = await app(  # type: ignore[func-returns-value]
+2024-12-06T18:24:17.3497732Z              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3497765Z   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 70, in __call__
+2024-12-06T18:24:17.3497790Z     return await self.app(scope, receive, send)
+2024-12-06T18:24:17.3497839Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3497870Z   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2024-12-06T18:24:17.3497897Z     await super().__call__(scope, receive, send)
+2024-12-06T18:24:17.3497927Z   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 123, in __call__
+2024-12-06T18:24:17.3497954Z     await self.middleware_stack(scope, receive, send)
+2024-12-06T18:24:17.3497984Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+2024-12-06T18:24:17.3498115Z     raise exc
+2024-12-06T18:24:17.3498151Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+2024-12-06T18:24:17.3498179Z     await self.app(scope, receive, _send)
+2024-12-06T18:24:17.3498233Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/sessions.py", line 85, in __call__
+2024-12-06T18:24:17.3498263Z     await self.app(scope, receive, send_wrapper)
+2024-12-06T18:24:17.3498292Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:17.3498317Z     with collapse_excgroups():
+2024-12-06T18:24:17.3498345Z   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:17.3498371Z     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:17.3498402Z   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:17.3498427Z     raise exc
+2024-12-06T18:24:17.3498460Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:17.3498487Z     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:17.3498531Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3498559Z   File "/app/backend/open_webui/main.py", line 884, in inspect_websocket
+2024-12-06T18:24:17.3498584Z     return await call_next(request)
+2024-12-06T18:24:17.3498607Z            ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3498639Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:17.3498663Z     raise app_exc
+2024-12-06T18:24:17.3498693Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:17.3498722Z     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:17.3498751Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:17.3498794Z     with collapse_excgroups():
+2024-12-06T18:24:17.3498836Z   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:17.3498876Z     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:17.3498906Z   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:17.3498948Z     raise exc
+2024-12-06T18:24:17.3498979Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:17.3499005Z     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:17.3499034Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3499062Z   File "/app/backend/open_webui/main.py", line 863, in update_embedding_function
+2024-12-06T18:24:17.3499088Z     response = await call_next(request)
+2024-12-06T18:24:17.3499113Z                ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:17.3499142Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 166, in call_next
+2024-12-06T18:24:17.3499168Z     raise RuntimeError("No response returned.")
+2024-12-06T18:24:17.3499194Z RuntimeError: No response returned.
+2024-12-06T18:24:18.1869907Z INFO:     38.134.35.2:40651:0 - "GET /oauth/microsoft/callback?code=1.AQMAqv-5kRrjnkyg6lUOAlncMA9JwzZUoKBOtItTwpMIiOkBAW4DAA.AgABBAIAAADW6jl31mB3T7ugrWTT8pFeAwDs_wUA9P8T-hqbTMgKkRJax3m-gBWKQ87F_BJSfjbiUfKvNuUHzLZIdw4Td0gMkO87cIWoWciCU1QuVXLIuCPdI9fjtEzcsBa7Ro9SqLdn4__mqH3hZA7FlV9yAVOU4VQUkxe2VxGSibgYsNxtLQY4MkXZqaY29qZ95dehB6VDaJDeNJrxVf14K6YUTB5wINpnyTj4yRp9OzCTaKYj8ZVSqzzB9bClo99fCkBcTxc7HIk--cJrf3Q41v6lP6TUd3Ink8W0QDtWwAZQ8CObThA6zo2DKHdeCTDHfUBLIM7UTSJVhog6Aokz19aLbRR9ypUKXf31us-oS5tpEuEnn63MfKFbw8hrTGbAKA-j3P6Ot-w895Xtz49b2ZtXycEz7WEZ_4jEVCrmzo6RYM_8cfAnZfg-LZop2FxIHA7cC6OIi197uNG5D4InGg8yDG0pqRVueEqLkD-Ry47neNtDOBmm7c5_A8uxOwRF6Mxtv3Ct4EyusyxXpWw8IdyTLF5XeG8czC6enV4Ts7NhO7c-e7QI1pl808P5OFowyRGD9HBROM2FSD5SsC98zvq3V1Wa8QltFX70B6QzBaTESCCbY1ZCBcv9GyxwuaHToRYd13h4GMiRyzP98EKcYPg5l7lg-Wh2rJRvNsnICcg9tWf-t2ahLIPZgxSO9yo9gX0NrQYTYTlHCdItsC5ndvf-U8ZIsBePhdpNYzAz8AVPwIYTY6dgJgBI8eYoSjfX8ghXIYLh2pfAUODjKc4ysGMgSsUYw0g2CfXrF2fzf-roTM5YFT4CLY3kr5xxiWWW6jsD5Of2Re3j6H5x84wJCkLdE2XK0BvskQCwA7bXU3HxHqDcRqny_X4EDmEVX8VIyRJcCs73FFmVSMA8S7fEpouZQb5twGSQMa7T5YkHz4q17oO2oGXLggkYIltbIK-OMYiAJe349fZAEU3mfo2ze7FNWnPWxb8vX66xt8or2HOuBzSBswG5tE-vRMN5ZfCZ3zPhTYfvzhVTBc3f80UcSvdHLlIxla0IpXSMXxHC6Xdnab7PNFRiuU5YF1UX4Iu-YC9RcUE-oJ4i1L1MVbkjNXIQw7KSMY1x_pinQAoCN-ItXaPQt6G1MkJRZ02eKRgeQJsG41k298dfJag8w6n_SZ4r0Em-ATYai8V_QWKfPBZRz4-ROGmojo7qjJ-Tmlb0DIwZrMh70b0q&state=Y9T1yU3zozvOhMBEnDbWw9JbQX3qFg&session_state=d0b5e85f-dca9-4ff1-bcdf-fd81198a6a5d HTTP/1.1" 307 Temporary Redirect
+2024-12-06T18:24:18.2090276Z INFO:     38.134.35.2:40651:0 - "GET /auth HTTP/1.1" 200 OK
+2024-12-06T18:24:18.3126273Z INFO:     38.134.35.2:40651:0 - "GET /manifest.json HTTP/1.1" 200 OK
+2024-12-06T18:24:18.3844453Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDr9x&sid=mLgoJxfHpySkZTtFAAKQ HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:19.5825781Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDrSd&sid=gSUgMEc2Dhh3VCcTAAKS HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:19.6009042Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDrSz&sid=gSUgMEc2Dhh3VCcTAAKS HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:20.1762020Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDrbh HTTP/1.1" 200 OK
+2024-12-06T18:24:20.2014844Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDrcJ&sid=0FAWRIfEOKZgoDlMAAAG HTTP/1.1" 200 OK
+2024-12-06T18:24:21.2407027Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDrsX.0&sid=tcIxxE7-_L70v57QAAKT HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:22.2694906Z INFO:     ('38.134.35.2:40651', 0) - "WebSocket /ws/socket.io/?EIO=4&transport=websocket&sid=NFvXsPa1WTTYsdRmAAKV" 403
+2024-12-06T18:24:22.2705685Z INFO:     connection rejected (403 Forbidden)
+2024-12-06T18:24:22.2713026Z INFO:     connection closed
+2024-12-06T18:24:22.2756611Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDs6j&sid=NFvXsPa1WTTYsdRmAAKV HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:22.2907293Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDs6_&sid=NFvXsPa1WTTYsdRmAAKV HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:23.4428282Z INFO:     38.134.35.2:40651:0 - "GET /api/v1/auths/ HTTP/1.1" 200 OK
+2024-12-06T18:24:23.5298590Z INFO:     38.134.35.2:40651:0 - "GET /api/config HTTP/1.1" 200 OK
+2024-12-06T18:24:23.6472712Z INFO:     38.134.35.2:40651:0 - "GET /api/changelog HTTP/1.1" 200 OK
+2024-12-06T18:24:23.7787612Z INFO:     ('38.134.35.2:40651', 0) - "WebSocket /ws/socket.io/?EIO=4&transport=websocket&sid=j97P8w3qDCcjrVUEAAKX" 403
+2024-12-06T18:24:23.7795522Z INFO:     connection rejected (403 Forbidden)
+2024-12-06T18:24:23.7796125Z INFO:     connection closed
+2024-12-06T18:24:23.7853196Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDsUF.0&sid=j97P8w3qDCcjrVUEAAKX HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:25.1009491Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDsoo&sid=RMjw-HOvBmDm4ARSAAKZ HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:25.1261288Z INFO:     38.134.35.2:40651:0 - "POST /ws/socket.io/?EIO=4&transport=polling&t=PETDspD&sid=RMjw-HOvBmDm4ARSAAKZ HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:25.7396562Z INFO:     ('38.134.35.2:40651', 0) - "WebSocket /ws/socket.io/?EIO=4&transport=websocket&sid=RtWNGosR3MMcXrpqAAKa" 403
+2024-12-06T18:24:25.7397067Z INFO:     connection rejected (403 Forbidden)
+2024-12-06T18:24:25.7418051Z INFO:     connection closed
+2024-12-06T18:24:25.7451110Z INFO:     38.134.35.2:40651:0 - "GET /ws/socket.io/?EIO=4&transport=polling&t=PETDsyp&sid=RtWNGosR3MMcXrpqAAKa HTTP/1.1" 400 Bad Request
+2024-12-06T18:24:28.7991716Z INFO:     38.134.35.2:40651:0 - "GET /api/v1/users/user/settings HTTP/1.1" 200 OK
+2024-12-06T18:24:33.9789606Z INFO  [open_webui.apps.openai.main] get_all_models()
+2024-12-06T18:24:34.1431378Z INFO:     38.134.35.2:40651:0 - "GET /api/v1/tools/ HTTP/1.1" 200 OK
+2024-12-06T18:24:34.1439435Z INFO:     38.134.35.2:40651:0 - "GET /api/v1/chats/tags/all HTTP/1.1" 200 OK
+2024-12-06T18:24:34.1446618Z INFO:     38.134.35.2:40651:0 - "GET /api/v1/knowledge/ HTTP/1.1" 200 OK
+2024-12-06T18:24:34.2869263Z INFO:     38.134.35.2:40651:0 - "GET /api/models HTTP/1.1" 200 OK
+2024-12-06T18:24:46.4541968Z INFO:     38.134.35.2:20515:0 - "POST /api/chat/completions HTTP/1.1" 500 Internal Server Error
+2024-12-06T18:24:46.4616464Z ERROR:    Exception in ASGI application
+2024-12-06T18:24:46.4616960Z   + Exception Group Traceback (most recent call last):
+2024-12-06T18:24:46.4617000Z   |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 87, in collapse_excgroups
+2024-12-06T18:24:46.4617039Z   |     yield
+2024-12-06T18:24:46.4617068Z   |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 190, in __call__
+2024-12-06T18:24:46.4617094Z   |     async with anyio.create_task_group() as task_group:
+2024-12-06T18:24:46.4617121Z   |   File "/usr/local/lib/python3.11/site-packages/anyio/_backends/_asyncio.py", line 736, in __aexit__
+2024-12-06T18:24:46.4617142Z   |     raise BaseExceptionGroup(
+2024-12-06T18:24:46.4617169Z   | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+2024-12-06T18:24:46.4617193Z   +-+---------------- 1 ----------------
+2024-12-06T18:24:46.4617240Z     | Traceback (most recent call last):
+2024-12-06T18:24:46.4617274Z     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 401, in run_asgi
+2024-12-06T18:24:46.4617306Z     |     result = await app(  # type: ignore[func-returns-value]
+2024-12-06T18:24:46.4617333Z     |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4617362Z     |   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 70, in __call__
+2024-12-06T18:24:46.4617386Z     |     return await self.app(scope, receive, send)
+2024-12-06T18:24:46.4617412Z     |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4617437Z     |   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2024-12-06T18:24:46.4617458Z     |     await super().__call__(scope, receive, send)
+2024-12-06T18:24:46.4617497Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 123, in __call__
+2024-12-06T18:24:46.4617518Z     |     await self.middleware_stack(scope, receive, send)
+2024-12-06T18:24:46.4617543Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+2024-12-06T18:24:46.4617563Z     |     raise exc
+2024-12-06T18:24:46.4617589Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+2024-12-06T18:24:46.4617611Z     |     await self.app(scope, receive, _send)
+2024-12-06T18:24:46.4617640Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/sessions.py", line 85, in __call__
+2024-12-06T18:24:46.4617661Z     |     await self.app(scope, receive, send_wrapper)
+2024-12-06T18:24:46.4617684Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4617721Z     |     with collapse_excgroups():
+2024-12-06T18:24:46.4617744Z     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4617768Z     |     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4617796Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4617817Z     |     raise exc
+2024-12-06T18:24:46.4617842Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4617864Z     |     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4617886Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4617914Z     |   File "/app/backend/open_webui/main.py", line 884, in inspect_websocket
+2024-12-06T18:24:46.4617938Z     |     return await call_next(request)
+2024-12-06T18:24:46.4617976Z     |            ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4618000Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:46.4618022Z     |     raise app_exc
+2024-12-06T18:24:46.4618048Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:46.4618077Z     |     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:46.4618101Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4618125Z     |     with collapse_excgroups():
+2024-12-06T18:24:46.4618155Z     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4618188Z     |     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4618234Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4618262Z     |     raise exc
+2024-12-06T18:24:46.4618292Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4618323Z     |     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4618351Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4618382Z     |   File "/app/backend/open_webui/main.py", line 863, in update_embedding_function
+2024-12-06T18:24:46.4618410Z     |     response = await call_next(request)
+2024-12-06T18:24:46.4618436Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4618471Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:46.4618518Z     |     raise app_exc
+2024-12-06T18:24:46.4618551Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:46.4618820Z     |     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:46.4618855Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4618884Z     |     with collapse_excgroups():
+2024-12-06T18:24:46.4618913Z     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4618941Z     |     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4618973Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4619000Z     |     raise exc
+2024-12-06T18:24:46.4619051Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4619079Z     |     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4619107Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4619138Z     |   File "/app/backend/open_webui/main.py", line 854, in check_url
+2024-12-06T18:24:46.4619165Z     |     response = await call_next(request)
+2024-12-06T18:24:46.4619192Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4619229Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:46.4619254Z     |     raise app_exc
+2024-12-06T18:24:46.4619285Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:46.4619331Z     |     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:46.4619364Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4619391Z     |     with collapse_excgroups():
+2024-12-06T18:24:46.4619419Z     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4619445Z     |     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4619477Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4619499Z     |     raise exc
+2024-12-06T18:24:46.4619528Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4619552Z     |     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4619595Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4619625Z     |   File "/app/backend/open_webui/main.py", line 840, in commit_session_after_request
+2024-12-06T18:24:46.4619657Z     |     response = await call_next(request)
+2024-12-06T18:24:46.4619683Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4619715Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:46.4619743Z     |     raise app_exc
+2024-12-06T18:24:46.4619775Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:46.4619805Z     |     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:46.4619836Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4619863Z     |     with collapse_excgroups():
+2024-12-06T18:24:46.4619908Z     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4619936Z     |     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4619969Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4619994Z     |     raise exc
+2024-12-06T18:24:46.4620024Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4620062Z     |     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4620089Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4620120Z     |   File "/app/backend/open_webui/utils/security_headers.py", line 11, in dispatch
+2024-12-06T18:24:46.4620147Z     |     response = await call_next(request)
+2024-12-06T18:24:46.4620192Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4620232Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:46.4620258Z     |     raise app_exc
+2024-12-06T18:24:46.4620289Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:46.4620320Z     |     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:46.4620352Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 93, in __call__
+2024-12-06T18:24:46.4620381Z     |     await self.simple_response(scope, receive, send, request_headers=headers)
+2024-12-06T18:24:46.4620414Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 148, in simple_response
+2024-12-06T18:24:46.4620446Z     |     await self.app(scope, receive, send)
+2024-12-06T18:24:46.4620496Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4620523Z     |     with collapse_excgroups():
+2024-12-06T18:24:46.4620550Z     |   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4620580Z     |     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4620674Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4620702Z     |     raise exc
+2024-12-06T18:24:46.4620733Z     |   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4620763Z     |     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4620793Z     |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4620841Z     |   File "/app/backend/open_webui/main.py", line 778, in dispatch
+2024-12-06T18:24:46.4620869Z     |     user = get_current_user(
+2024-12-06T18:24:46.4620897Z     |            ^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4620927Z     |   File "/app/backend/open_webui/utils/utils.py", line 106, in get_current_user
+2024-12-06T18:24:46.4620952Z     |     raise HTTPException(
+2024-12-06T18:24:46.4620983Z     | fastapi.exceptions.HTTPException: 401: 401 Unauthorized
+2024-12-06T18:24:46.4621010Z     +------------------------------------
+2024-12-06T18:24:46.4621034Z 
+2024-12-06T18:24:46.4621064Z During handling of the above exception, another exception occurred:
+2024-12-06T18:24:46.4621170Z 
+2024-12-06T18:24:46.4621222Z Traceback (most recent call last):
+2024-12-06T18:24:46.4621254Z   File "/usr/local/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 401, in run_asgi
+2024-12-06T18:24:46.4621283Z     result = await app(  # type: ignore[func-returns-value]
+2024-12-06T18:24:46.4621311Z              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4621343Z   File "/usr/local/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 70, in __call__
+2024-12-06T18:24:46.4621369Z     return await self.app(scope, receive, send)
+2024-12-06T18:24:46.4621397Z            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4621426Z   File "/usr/local/lib/python3.11/site-packages/fastapi/applications.py", line 1054, in __call__
+2024-12-06T18:24:46.4621453Z     await super().__call__(scope, receive, send)
+2024-12-06T18:24:46.4621502Z   File "/usr/local/lib/python3.11/site-packages/starlette/applications.py", line 123, in __call__
+2024-12-06T18:24:46.4621528Z     await self.middleware_stack(scope, receive, send)
+2024-12-06T18:24:46.4621560Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 186, in __call__
+2024-12-06T18:24:46.4621586Z     raise exc
+2024-12-06T18:24:46.4621623Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/errors.py", line 164, in __call__
+2024-12-06T18:24:46.4621650Z     await self.app(scope, receive, _send)
+2024-12-06T18:24:46.4621681Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/sessions.py", line 85, in __call__
+2024-12-06T18:24:46.4621708Z     await self.app(scope, receive, send_wrapper)
+2024-12-06T18:24:46.4621740Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4621783Z     with collapse_excgroups():
+2024-12-06T18:24:46.4621813Z   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4621841Z     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4621870Z   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4621895Z     raise exc
+2024-12-06T18:24:46.4621926Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4621956Z     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4621990Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4622020Z   File "/app/backend/open_webui/main.py", line 884, in inspect_websocket
+2024-12-06T18:24:46.4622046Z     return await call_next(request)
+2024-12-06T18:24:46.4622092Z            ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4622125Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:46.4622290Z     raise app_exc
+2024-12-06T18:24:46.4622326Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:46.4622354Z     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:46.4622391Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4622417Z     with collapse_excgroups():
+2024-12-06T18:24:46.4622447Z   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4622474Z     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4622522Z   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4622548Z     raise exc
+2024-12-06T18:24:46.4622578Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4622606Z     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4622634Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4622664Z   File "/app/backend/open_webui/main.py", line 863, in update_embedding_function
+2024-12-06T18:24:46.4622690Z     response = await call_next(request)
+2024-12-06T18:24:46.4622716Z                ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4622747Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:46.4622772Z     raise app_exc
+2024-12-06T18:24:46.4622823Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:46.4622854Z     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:46.4622884Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4622910Z     with collapse_excgroups():
+2024-12-06T18:24:46.4623004Z   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4623035Z     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4623065Z   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4623090Z     raise exc
+2024-12-06T18:24:46.4623124Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4623171Z     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4623198Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4623227Z   File "/app/backend/open_webui/main.py", line 854, in check_url
+2024-12-06T18:24:46.4623254Z     response = await call_next(request)
+2024-12-06T18:24:46.4623280Z                ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4623311Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:46.4623336Z     raise app_exc
+2024-12-06T18:24:46.4623366Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:46.4623394Z     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:46.4623442Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4651941Z     with collapse_excgroups():
+2024-12-06T18:24:46.4652170Z   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4652206Z     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4652238Z   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4652266Z     raise exc
+2024-12-06T18:24:46.4652298Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4652331Z     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4652359Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4652388Z   File "/app/backend/open_webui/main.py", line 840, in commit_session_after_request
+2024-12-06T18:24:46.4652439Z     response = await call_next(request)
+2024-12-06T18:24:46.4652467Z                ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4652496Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:46.4652522Z     raise app_exc
+2024-12-06T18:24:46.4652552Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:46.4652582Z     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:46.4652612Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4652638Z     with collapse_excgroups():
+2024-12-06T18:24:46.4652666Z   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4652709Z     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4652747Z   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4652772Z     raise exc
+2024-12-06T18:24:46.4652801Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4652829Z     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4652857Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4652886Z   File "/app/backend/open_webui/utils/security_headers.py", line 11, in dispatch
+2024-12-06T18:24:46.4652911Z     response = await call_next(request)
+2024-12-06T18:24:46.4652937Z                ^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4652967Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 165, in call_next
+2024-12-06T18:24:46.4653014Z     raise app_exc
+2024-12-06T18:24:46.4653045Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 151, in coro
+2024-12-06T18:24:46.4653073Z     await self.app(scope, receive_or_disconnect, send_no_error)
+2024-12-06T18:24:46.4653102Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 93, in __call__
+2024-12-06T18:24:46.4653132Z     await self.simple_response(scope, receive, send, request_headers=headers)
+2024-12-06T18:24:46.4653161Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/cors.py", line 148, in simple_response
+2024-12-06T18:24:46.4653191Z     await self.app(scope, receive, send)
+2024-12-06T18:24:46.4653221Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 189, in __call__
+2024-12-06T18:24:46.4653247Z     with collapse_excgroups():
+2024-12-06T18:24:46.4653294Z   File "/usr/local/lib/python3.11/contextlib.py", line 158, in __exit__
+2024-12-06T18:24:46.4653319Z     self.gen.throw(typ, value, traceback)
+2024-12-06T18:24:46.4653348Z   File "/usr/local/lib/python3.11/site-packages/starlette/_utils.py", line 93, in collapse_excgroups
+2024-12-06T18:24:46.4653372Z     raise exc
+2024-12-06T18:24:46.4653402Z   File "/usr/local/lib/python3.11/site-packages/starlette/middleware/base.py", line 191, in __call__
+2024-12-06T18:24:46.4653430Z     response = await self.dispatch_func(request, call_next)
+2024-12-06T18:24:46.4653457Z                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4653484Z   File "/app/backend/open_webui/main.py", line 778, in dispatch
+2024-12-06T18:24:46.4653511Z     user = get_current_user(
+2024-12-06T18:24:46.4653552Z            ^^^^^^^^^^^^^^^^^
+2024-12-06T18:24:46.4653587Z   File "/app/backend/open_webui/utils/utils.py", line 106, in get_current_user
+2024-12-06T18:24:46.4653610Z     raise HTTPException(
+2024-12-06T18:24:46.4653637Z fastapi.exceptions.HTTPException: 401: 401 Unauthorized
+2024-12-06T18:24:46.5324167Z INFO:     38.134.35.2:20515:0 - "POST /api/v1/chats/08e210a0-d76b-49fc-993a-0a814abdea90 HTTP/1.1" 401 Unauthorized
+2024-12-06T18:24:52.3851497Z INFO:     38.134.35.2:20515:0 - "GET /api/v1/chats/08e210a0-d76b-49fc-993a-0a814abdea90/tags HTTP/1.1" 401 Unauthorized
+2024-12-06T18:24:52.4249350Z INFO:     38.134.35.2:20515:0 - "GET /api/v1/chats/08e210a0-d76b-49fc-993a-0a814abdea90/tags HTTP/1.1" 401 Unauthorized
+2024-12-06T18:24:54.4573486Z INFO:     38.134.35.2:20515:0 - "DELETE /api/v1/chats/08e210a0-d76b-49fc-993a-0a814abdea90 HTTP/1.1" 401 Unauthorized
+2024-12-06T18:24:57.9753679Z INFO:     38.134.35.2:20515:0 - "GET /api/v1/users/user/settings HTTP/1.1" 401 Unauthorized
+2024-12-06T18:24:58.0140566Z INFO:     38.134.35.2:20515:0 - "GET /api/v1/users/user/settings HTTP/1.1" 401 Unauthorized
+2024-12-06T18:25:11.8131089Z INFO:     38.134.35.2:20515:0 - "POST /api/v1/chats/new HTTP/1.1" 401 Unauthorized
+2024-12-06T18:26:21.6489233Z INFO:     127.0.0.1:13569:0 - "GET / HTTP/1.1" 200 OK
+2024-12-06T18:26:31.6346372Z INFO:     127.0.0.1:13570:0 - "GET / HTTP/1.1" 200 OK
